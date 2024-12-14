@@ -25,7 +25,7 @@ const page = () => {
 <div className='productImage'><img src={data.cartProduct.product_photo} alt="" /></div>
 <div className='productData'>
 <h1 key={index}>{data.cartProduct.product_title}</h1>
-<h2>{data.cartProduct.product_price}</h2>
+<h2>Price :${data.cartProduct.product_price}</h2>
 <h2>Quantity :{data.quantity}</h2>
 <h3>Rating : {data.cartProduct.product_star_rating
 }</h3>
