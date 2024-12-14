@@ -55,7 +55,7 @@ const page = () => {
 <div className='productImage' key={index}><img src={data.product_photo} alt="" /></div>
 <div className='productData' key={index}>
 <h1 key={index+6}>{data.product_title}</h1>
-<h2>{data.product_price}</h2>
+<h2>Price :${data.product_price}</h2>
 
 <h3 key={index +5}>Rating : {data.product_star_rating
 }</h3>
