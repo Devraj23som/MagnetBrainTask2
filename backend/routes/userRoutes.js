@@ -45,7 +45,7 @@ console.log(products ,"chal rha")
               name:product.product_title,
               images:[product.product_photo]
           },
-          unit_amount:56,
+          unit_amount:product.product_price,
        
       },
       quantity:1
