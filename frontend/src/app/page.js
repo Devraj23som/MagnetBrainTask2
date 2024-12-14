@@ -67,7 +67,7 @@ const page = () => {
         <div className='productImage'><img src={data.product_photo} alt="" /></div>
        <div className='productData'>
        <h1 key={index}>{data.product_title}</h1>
-       <h2>{data.product_price}</h2>
+       <h2>Price :${data.product_price}</h2>
        <h3>Rating : {data.product_star_rating
        }</h3>
        <button onClick={()=>CardHandler(data._id)} className='bg-blue-500 text-white p-2 rounded-md mt-3'>Add to cart</button>
