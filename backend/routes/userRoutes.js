@@ -45,7 +45,7 @@ console.log(products ,"chal rha")
               name:product.product_title,
               images:[product.product_photo]
           },
-          unit_amount:product.product_price,
+          unit_amount:parseInt(product.product_price) *100,
        
       },
       quantity:1
@@ -63,15 +63,7 @@ console.log(products ,"chal rha")
   res.json({id:session.id})
 
 })
-// router.put("/updateProfile", authGuard, updateProfile);
-// router.post(
-//   "/uploadProfilePic",
-//   authGuard,
-//   upload.single("profilePicture"),
-//   uploadProfilePic
-// );
-// router.get("/uploadProfilePic/:filename", getProfilePic);
-// router.delete("/deleteProfilePic", authGuard, deleteProfilePic);
+
 
 
 export default router;
